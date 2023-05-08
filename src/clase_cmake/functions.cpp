@@ -14,4 +14,9 @@ void show_image(cv::Mat & image)
   cv::waitKey(0);
 }
 
+void fill_msg(std_msgs::msg::String & msg_in)
+{
+  msg_in.data = "Hola CMake";
+}
+
 }  // namespace clase_cmake
