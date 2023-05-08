@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "functions.hpp"
+#include "clase_cmake/functions.hpp"
 
 int main(int argc, char * argv[])
 {
