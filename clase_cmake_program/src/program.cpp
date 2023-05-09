@@ -3,7 +3,7 @@
 #include "opencv2/opencv.hpp"
 #include "std_msgs/msg/string.hpp"
 
-#include "clase_cmake/functions.hpp"
+#include "clase_cmake_functions/functions.hpp"
 
 int main(int argc, char * argv[])
 {

@@ -1,4 +1,4 @@
-#include "clase_cmake/functions.hpp"
+#include "clase_cmake_functions/functions.hpp"
 
 namespace clase_cmake {
 
