@@ -1,17 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
 project(clase_cmake_program)
 
-find_package(OpenCV REQUIRED)
-find_package(std_msgs REQUIRED)
+find_package(clase_cmake_functions REQUIRED)
 
-include_directories(
-  ${clase_cmake_functions_INCLUDE_DIRS}
-)
-
-add_executable(program  src/program.cpp)
-target_link_libraries(program 
-  ${clase_cmake_functions_LIBS}
-)
+add_executable(program src/program.cpp)
+ament_target_dependencies(program clase_cmake_functions)
 
 install(TARGETS
     program
@@ -19,3 +12,5 @@ install(TARGETS
     LIBRARY DESTINATION lib
     RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
+
+ament_package()
