@@ -27,3 +27,15 @@ set(${PROJECT_NAME}_LIBS
     ${OpenCV_LIBS}
     ${std_msgs_LIBS}
     CACHE INTERNAL "${PROJECT_NAME}: Libraries" FORCE)
+
+install(TARGETS
+    ${PROJECT_NAME}
+    ARCHIVE DESTINATION lib
+    LIBRARY DESTINATION lib
+    RUNTIME DESTINATION lib/${PROJECT_NAME}
+)
+  
+install(DIRECTORY include/
+  DESTINATION include/
+)
+  
